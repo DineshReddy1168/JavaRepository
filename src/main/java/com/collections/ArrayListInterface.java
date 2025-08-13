@@ -4,42 +4,42 @@ import java.util.*;
 public class ArrayListInterface {
 
 	public static void main(String[] args) {
-		ArrayList<String> arr1=new ArrayList<String>();
-		ArrayList<Integer> arr2=new ArrayList<Integer>();
+		ArrayList<String> arrayList1=new ArrayList<String>();
+		ArrayList<Integer> arrayList2=new ArrayList<Integer>();
 		
 		//adding the elements to arr1
-		arr1.add("Dinesh");
-		arr1.add("Rahul");
-		arr1.add("Vikas");
+		arrayList1.add("Dinesh");
+		arrayList1.add("Rahul");
+		arrayList1.add("Vikas");
 		
 		//adding the elements to arr2
-		arr2.add(1);
-		arr2.add(2);
-		arr2.add(3);
+		arrayList2.add(1);
+		arrayList2.add(2);
+		arrayList2.add(3);
 		
-		System.out.println("arr1: "+arr1);
-		System.out.println("arr2: "+arr2);
+		System.out.println("arr1: "+arrayList1);
+		System.out.println("arr2: "+arrayList2);
 		
-		Iterator itr=arr1.iterator() ;  //Using Iterator
-		while(itr.hasNext()) {
-			System.out.println(itr.next());
+		Iterator iterator=arrayList1.iterator() ;  //Using Iterator
+		while(iterator.hasNext()) {
+			System.out.println(iterator.next());
 		}
 		
-		for(int a:arr2) {       // using for each loop
+		for(int a:arrayList2) {       // using for each loop
 			System.out.println(a);
 		}
 		
-		System.out.println(	arr1.get(2));  // get
-		System.out.println(	arr1.set(1, "Ramesh"));   //set
+		System.out.println(	arrayList1.get(2));  // get
+		System.out.println(	arrayList1.set(1, "Ramesh"));   //set
 		
-		System.out.println("After Using Set");
+		System.out.println("After Using set");
 
-		for(String a:arr1) {       // using for each loop
+		for(String a:arrayList1) {       // using for each loop
 			System.out.println(a);
 		}
 		
-		arr2.remove(1);
-		for(int a:arr2) {       // using for each loop
+		arrayList2.remove(1);
+		for(int a:arrayList2) {       // using for each loop
 			System.out.println(a);
 		}
 	}
