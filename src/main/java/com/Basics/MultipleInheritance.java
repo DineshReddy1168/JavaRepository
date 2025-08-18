@@ -1,4 +1,4 @@
-package com.Basics;
+package com.basics;
 
 interface AA{
 	abstract void display();

@@ -7,7 +7,6 @@ public class Student implements Comparable<Student> {
 	private int departmentId;
 	
 	public Student(int id, String name, int departmentId) {
-		super();
 		this.id = id;
 		this.name = name;
 		this.departmentId = departmentId;
@@ -20,7 +19,7 @@ public class Student implements Comparable<Student> {
 
 	
 	public int compareTo(Student that) {
-		if(this.id>that.id) {
+		if(this.departmentId>that.departmentId) {
 			return 1;
 		}
 		else

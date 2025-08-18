@@ -1,4 +1,4 @@
-package com.Basics;
+package com.basics;
 
 class Bank{
 	public void display()

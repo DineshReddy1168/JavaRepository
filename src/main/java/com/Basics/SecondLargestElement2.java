@@ -1,8 +1,17 @@
-package com.Basics;
+package com.basics;
 import java.util.*;
 
 class SecondLargestElement2{
+	static {
+    	System.out.println("Static Block");
+    }
+	
+	{
+		System.out.println("Non Static Block");
+	}
+	
     public static void main(String args[]){
+    	System.out.println("Main Block");
         int array[]={2,5,7,3,9,8,9};
         int n=array.length;
         
@@ -21,6 +30,8 @@ class SecondLargestElement2{
         }
         System.out.println(max);        
         System.out.println(secondValue);	
+        
+        
 
         //ArrayList<Integer> arr=new ArrayList<>();
 //      

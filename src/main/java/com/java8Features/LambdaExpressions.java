@@ -1,27 +1,30 @@
-package com.java8Features;
-import java.util.*;
+package com.java8features;
 
-interface R{
-	int add(int a,int b);
+interface Add{
+	int add(int i,int j);
 }
 
-interface T{
-	String say(String mess);
+interface Subtract{
+	int sub(int a,int b);
 }
-
 
 public class LambdaExpressions {
 
 	public static void main(String[] args) {
 		
-		R r= (a,b)->a+b;
-		T t = (mess)->{
-			String str="Hello";
-			return str;
+		//Anonymous class
+		Add addToNumbers=new Add() {
+			public int add(int i,int j) {
+				return i+j;
+			}
 		};
 		
-	System.out.println(r.add(1, 2));
-	System.out.println(t.say("Hel"));	
+		System.out.println(addToNumbers.add(3, 2));
+		
+		//Lambda Expression
+		
+		Subtract subtract=(int a,int b)-> a-b;
+		System.out.println(subtract.sub(6, 4));
 	}
 
 }

@@ -1,4 +1,4 @@
-package com.Basics;
+package com.basics;
 class simple1{
 
 public static int add(int a,int b)

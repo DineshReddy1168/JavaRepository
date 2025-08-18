@@ -1,4 +1,4 @@
-package com.Basics;
+package com.basics;
 
 class Simple{
 	int id;
